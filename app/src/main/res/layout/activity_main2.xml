@@ -5,49 +5,148 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000"
-    android:orientation="vertical"
-    tools:context="com.yedona.a4playerreactor.Main2Activity">
+    android:orientation="vertical">
 
     <RelativeLayout
+        android:id="@+id/rl2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/btn_bg">
+        android:background="@drawable/btn_bg_2"
+        android:onClick="choice2">
+
         <TextView
+            android:id="@+id/title2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:text="玩家1"
-            android:textColor="#fff"
+            android:background="@drawable/text_bg"
             android:rotation="180"
-            android:id="@+id/title2"
+            android:text="看见白色时点击"
+            android:textColor="#fff"
             android:textSize="24dp" />
 
         <TextView
-            android:rotation="180"
-            android:text="玩家2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/btn_bg_2"
+            android:rotation="180"
+            android:text="玩家2"
             android:textColor="#fff"
             android:textSize="24dp" />
+
+
+        <TextView
+            android:id="@+id/gameName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/text_bg_2"
+            android:rotation="180"
+            android:text="白屏"
+            android:textColor="#000"
+            android:textSize="32dp" />
+
+
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rl3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:background="@drawable/btn_bg_2">
+        android:onClick="choice3"
+        android:background="@drawable/btn_bg">
+
+        <TextView
+            android:id="@+id/pr"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/progress" />
+
+
+        <TextView
+            android:id="@+id/count2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:rotation="180"
+            android:text="0"
+            android:textColor="@color/gray"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/count1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textColor="@color/gray"
+            android:textSize="32dp" />
+
+
+        <TextView
+            android:id="@+id/gameNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/text_bg_2"
+            android:rotation="180"
+            android:text="挑战之1/1"
+            android:textColor="#000"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/gameNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/text_bg_2"
+            android:text="挑战之1/1"
+            android:textColor="#000"
+            android:textSize="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gameNum2"
+            android:layout_centerHorizontal="true"
+            android:text="wwww"
+            android:visibility="gone"
+            android:rotation="180"
+            android:id="@+id/colorText2"
+            android:textColor="#fff"
+            android:textSize="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/gameNum1"
+            android:layout_centerHorizontal="true"
+            android:text="wwww"
+            android:visibility="gone"
+            android:id="@+id/colorText1"
+            android:textColor="#fff"
+            android:textSize="48dp" />
+
 
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rl1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/btn_bg">
+        android:background="@drawable/btn_bg_2"
+        android:onClick="choice1">
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,13 +159,25 @@
 
         <TextView
             android:id="@+id/title1"
-            android:text="title1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/btn_bg_2"
+            android:background="@drawable/text_bg"
+            android:text="看见白色时点击"
             android:textColor="#fff"
             android:textSize="24dp" />
+
+
+        <TextView
+            android:id="@+id/gameName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/text_bg_2"
+            android:text="白屏"
+            android:textColor="#000"
+            android:textSize="32dp" />
 
 
     </RelativeLayout>

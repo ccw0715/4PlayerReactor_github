@@ -1,9 +1,9 @@
 package com.yedona.a4playerreactor;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-        Log.d("debug打印信息", "onCreate: ");
     }
 
     private void initView() {
@@ -144,5 +143,9 @@ public class MainActivity extends AppCompatActivity {
                 modeltv.setText("疯狂！！");
                 break;
         }
+    }
+
+    public void startGame(View view) {
+        startActivity(new Intent(this,WhiteScreenActivity.class));
     }
 }
